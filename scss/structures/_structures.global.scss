@@ -24,6 +24,7 @@ $ns: s-global;
     }
 
     &__menu {
+        text-align: right;
 
         &-link {
             color: $denim;
@@ -31,6 +32,7 @@ $ns: s-global;
             font-size: 15px;
             margin-left: 20px;
             text-decoration: none;
+            white-space: nowrap;
 
             &.is-active {
               color: $oslo-gray;
@@ -51,16 +53,16 @@ $ns: s-global;
     justify-content: space-around;
 
   @include pxl-media($sm-view-up) {
-    height: wrapper-height(70);
+    min-height: wrapper-height(70);
     margin-top: 50px;
   }
 
   &--center {
     justify-content: center;
-    height: wrapper-height(50);
+    min-height: wrapper-height(50);
 
     @include pxl-media($sm-view-up) {
-      height: wrapper-height(70);
+      min-height: wrapper-height(70);
     }
   }
 

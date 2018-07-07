@@ -19,9 +19,14 @@ $ns: c-icon-blocks;
   &__item {
     display: flex;
       align-items: center;
-      flex-direction: row;
+      flex-direction: column;
     margin: 20px 10px;
-    text-align: left;
+    text-align: center;
+
+    @include pxl-media($xs-view-up) {
+      flex-direction: row;
+      text-align: left;
+    }
 
     @include pxl-media($sm-view-up) {
       flex-direction: column;
