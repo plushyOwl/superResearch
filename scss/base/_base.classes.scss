@@ -13,6 +13,8 @@ body {
     height: 100vh;
     line-height: 1.5;
     min-width: 390px;
+    overflow-x: hidden;
+    width: 100vw;
 
     @include pxl-media($md-view-up) {
         font-size: 16px;
@@ -24,6 +26,7 @@ h1,
     color: $zircon;
     font-size: 54px;
     font-weight: 300;
+    line-height: 45px;
 }
 
 h2,
@@ -96,8 +99,8 @@ ul {
   color: $tropical-blue;
   font-size: 34px;
   font-weight: 300;
-  margin-top: 70px;
-  margin-bottom: 10px;
+  padding-top: 70px;
+  padding-bottom: 10px;
 }
 
 .counter {
@@ -122,4 +125,8 @@ ul {
   position: relative;
   width: 100%;
   z-index: 2;
+}
+
+.result-page {
+  background-color: $firefly;
 }

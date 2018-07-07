@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Super Search</title>
     <link href="../static/css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../static/js/script.js"></script>
   </head>
 <body>
   <!-- header -->
@@ -38,29 +40,35 @@
           <div class="c-icon-blocks__item-img">
               <img src="../static/images/result1.png" alt="result1">
           </div>
-          <p class="c-icon-blocks__item-title">Шелдон Ли Купер</p>
-          <p class="c-icon-blocks__item-description">Теория большого взрыва</p>
+          <div>
+            <p class="c-icon-blocks__item-title">Шелдон Ли Купер</p>
+            <p class="c-icon-blocks__item-description">Теория большого взрыва</p>
+          </div>
         </div>
         <div class="c-icon-blocks__item">
           <div class="c-icon-blocks__item-img c-icon-blocks__item-img--centered">
               <img src="../static/images/result2.png" alt="result2">
           </div>
-          <p class="c-icon-blocks__item-title">Миранда Хоббс </p>
-          <p class="c-icon-blocks__item-description">Секс в большом городе</p>
+          <div>
+            <p class="c-icon-blocks__item-title">Миранда Хоббс </p>
+            <p class="c-icon-blocks__item-description">Секс в большом городе</p>
+          </div>
         </div>
         <div class="c-icon-blocks__item">
           <div class="c-icon-blocks__item-img c-icon-blocks__item-img--centered">
               <img src="../static/images/result3.png" alt="result3">
           </div>
-          <p class="c-icon-blocks__item-title">Моника Геллер</p>
-          <p class="c-icon-blocks__item-description">Друзья</p>
+          <div>
+            <p class="c-icon-blocks__item-title">Моника Геллер</p>
+            <p class="c-icon-blocks__item-description">Друзья</p>
+          </div>
         </div>
       </div>
 
       <h2>Вы относитесь к рациональным, логически мыслящим, очень аккуратным,
          организованным и методичным людям.</h2>
 
-      <span class="go-to-results"></span>
+      <span class="go-to-results js-go-to-results"></span>
 
   </div>
 
@@ -74,7 +82,7 @@
 
     <div class="wrapper">
 
-      <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="u-display-none">
        <filter id="blur">
          <feGaussianBlur stdDeviation="10"/>
        </filter>
