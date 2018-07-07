@@ -16,7 +16,7 @@ $font-family-primary: 'Qanelas', sans-serif !default;
 */
 
 /// Page-level constraining and wrapping width
-$wrapper-max-width: 960px !default;
+$wrapper-max-width: 1000px !default;
 $header-height: 70px;
 $wrapper-height: calc(100% - #{$header-height});
 $em-base: 16px !default;

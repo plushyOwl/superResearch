@@ -43,24 +43,24 @@ $ns: s-global;
 }
 
 .#{$ns}-wrapper {
-  margin-top: 50px;
+  margin-top: 30px;
   margin-bottom: 20px;
   display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 
   @include pxl-media($sm-view-up) {
-    height: wrapper-height(90);
-    margin-top: 70px;
+    height: wrapper-height(70);
+    margin-top: 50px;
   }
 
   &--center {
     justify-content: center;
-    height: wrapper-height(70);
+    height: wrapper-height(50);
 
     @include pxl-media($sm-view-up) {
-      height: wrapper-height(90);
+      height: wrapper-height(70);
     }
   }
 

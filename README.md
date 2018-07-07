@@ -1,2 +1,6 @@
-npm install
-gulp css
+#### Initial Setup
+- `npm install`
+- `gulp css`
+
+##### Developing
+- `gulp watch`

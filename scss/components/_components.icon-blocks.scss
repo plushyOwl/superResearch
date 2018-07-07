@@ -38,7 +38,9 @@ $ns: c-icon-blocks;
     }
 
     &-text {
+      display: block;
       font-size: 17px;
+      max-width: 280px;
     }
 
     &-img {
