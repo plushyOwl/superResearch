@@ -1,0 +1,32 @@
+/*
+* Question Block
+*/
+
+$ns: c-question-block;
+
+.#{$ns} {
+  background-color: #FFF;
+  border-radius: 4px;
+  margin-bottom: 25px;
+  margin-top: 50px;
+  padding: 28px;
+  text-align: left;
+  width: 100%;
+
+  &__header {
+    color: $tuna;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  &__choice {
+    color: $tuna;
+    font-size: 17px;
+
+    & + & {
+      margin-top: 15px;
+    }
+  }
+
+}

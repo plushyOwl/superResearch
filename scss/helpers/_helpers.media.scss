@@ -1,12 +1,8 @@
-// ============================================================================
-// Media
-// ============================================================================
-
+/*
+* Media
+*
+*/
 /// Outputs a media-query block with an optional grid context (the total number of columns used in the grid).
-///
-/// @author ThinkBot / PixelMEDIA (Jeff Leombruno)
-///
-/// @group Responsive
 ///
 /// @param {List} $query
 ///   A list of media query features and values, where each `$feature` should have a corresponding `$value`.

@@ -1,128 +1,49 @@
-// ============================================================================
-// Core Global Variables
-// ============================================================================
+/*
+* Core Global Variables
+*/
 
 
-// Typography
-// ============================================================================
+/*
+* Typography
+*/
 
 /// Primary font family of design
-/// @group Styling
-$font-family-primary: 'Roboto', sans-serif !default;
+$font-family-primary: 'Qanelas', sans-serif !default;
 
-/// Secondary font family of design
-/// @group Styling
-$font-family-secondary: AkzidenzGroteskBE-XBdCnIt, arial, helvetica, sans-serif !default;
 
-/// Tertiary font family of design
-/// @group Styling
-$font-family-tertiary: 'HelveticaNeueLTStd-BlkCnO', sans-serif !default;
-
-// Layout
-// ============================================================================
+/*
+* Layout
+*/
 
 /// Page-level constraining and wrapping width
-/// @group Layout
-$wrapper-max-width: 1600px !default;
-
-/// Sets the width of a single grid gutter.
-/// @group Layout
-$setting-gutter: 40px !default;
-
+$wrapper-max-width: 960px !default;
+$header-height: 70px;
+$wrapper-height: calc(100% - #{$header-height});
 $em-base: 16px !default;
 
+@function wrapper-height($margin) {
+    $height: $header-height + $margin;
 
-// Color Names
-// ============================================================================
+    @return calc(100% - #{$height});
 
-// All color variable names should be named using
-// http://chir.ag/projects/name-that-color/
-//
-// For more information, please see https://davidwalsh.name/sass-color-variables-dont-suck
+}
 
+/*
+* Color Names
+*
+* All color variable names should be named using
+* http://chir.ag/projects/name-that-color/
+*
+*/
 
-// Brand Color Names
-
-// Easton
-$school-bus-yellow: #ffdd00;  // Primary Accent
-$scarlet: #FF1800; // Red
-$screamin-green: #86FF52; // Green
-$limeade: #458100; // Green
-
-// Primary Brand Color
-$primary-brand-color: $school-bus-yellow !default;
-
-// Secondary Brand Color
-$secondary-brand-color: #000 !default;
-
-
-// White
-$white-51: hsla(0, 0%, 100%, 0.51);
-$white-70: rgba(255, 255, 255, .7);
-
-// Black
-$black-10: rgba(0, 0, 0, .10);
-$black-15: rgba(0, 0, 0, .15);
-$black-20: rgba(0, 0, 0, .20);
-$black-25: rgba(0, 0, 0, .25);
-$black-30: rgba(0, 0, 0, .30);
-$black-35: rgba(0, 0, 0, .35);
-$black-50: rgba(0, 0, 0, .50);
-$black-60: rgba(0, 0, 0, .60);
-$black-70: rgba(0, 0, 0, .70);
-$black-75: rgba(0, 0, 0, .75);
-$black-90: rgba(0, 0, 0, .9);
-
-// Gray
-$concrete: #f3f3f3; // Light Gray Alternative 2 - Utility Menu Mobile
-$wild-sand: #F5F5F5;
-$gallery: #EFEFEF;
-$mercury: #E1E1E1;
-$alto: #D0D0D0; // Mobile Nav Border Color
-$silver: #CCCCCC; // Light Gray Alternative - Input placeholders
-$gray-59: rgba(225, 225, 225, .59);
-$bombay: #b5b6ba;  // Footer Navigation Color
-$silver-sand: #C5C6C7;
-$silver-chalice: #b0b0b0;  // Light Grey ALternative - Search Input placeholder
-$dusty-gray: #999999;
-$oslo-gray: #8A8C8E;
-$shuttle-gray: #636466; // Utility Nav Link Color Mobile
-$abbey: #49494A;
-$ship-gray: #414042; // Light Gray - Main body color, Border color Footer Nav
-$storm-gray: #737477;  // Social Media icons footer
-$grey-75: rgba(65, 64, 66, .75);
-$cod-gray: rgb(23, 23, 23); // Dark Gray
-$mine-shaft: #1f1f1f; // Medium Gray - Input BG
-$mine-shaft-secondary: #222222;
-
-// Blue
-$malibu: #64ccf1;
-$curious-blue: #2CA9E0;
-$azure: #355F9F;
-$cyprus: #002E40;
-
-$punch: #df4930;
-
-// Animation
-// ============================================================================
-
-/// Primary transition
-/// @group Animation
-$transition-primary: all .25s ease !default;
-
-
-// Z-Index
-// ============================================================================
-
-$z-index-dialog: 9999;
-$z-index-header: 200;
-$z-index-main: 0;
-$z-index-tooltip: 999;
-
-
-// Header
-// ============================================================================
-
-$global-header-height: 60px !default;
-$global-header-height--md-up: 75px !default;
-
+$denim: #105AB4;
+$oslo-gray: #949699;
+$firefly: #0E1E33;
+$zircon: #F1F7FF;
+$cornflower: #92B8E9;
+$pigeon-post: #A7BAD3;
+$tuna: #3D3F43;
+$solitude: #E6F4FF;
+$athens-gray: #F8F9FA;
+$tropical-blue: #CEE1F7;
+$spindle: #AAC7EB;

@@ -1,14 +1,15 @@
-// ============================================================================
-// Breakpoint Classes
-// ============================================================================
+/*
+* Breakpoint Classes
+*
+* This allows the developer to quickly create responsive namespaced classes while only typing in
+* the properties once. Please note that when inserting the class name into markup, you do not need
+* need to the \ after @.
+*
+*/
 
 /// This allows the developer to quickly create responsive namespaced classes while only typing in
 /// the properties once. Please note that when inserting the class name into markup, you do not need
 /// need to the \ after @.
-///
-/// @author PixelMEDIA (Jono Herrington)
-///
-/// @group Responsive
 ///
 /// @param {list} $breakpoints - Insert list of breakpoint values.
 /// @param {number} $breakpoint-count [null] - Insert number of breakpoints to iterate over.
@@ -129,5 +130,3 @@
     }
 
 }
-
-

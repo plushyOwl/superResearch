@@ -1,0 +1,72 @@
+/*
+* Icon Blocks
+*/
+
+$ns: c-icon-blocks;
+
+.#{$ns} {
+  display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+  width: 100%;
+
+  @include pxl-media($sm-view-up) {
+    flex-direction: row;
+  }
+
+  &__item {
+    display: flex;
+      align-items: center;
+      flex-direction: column;
+    margin: 20px 10px;
+    max-width: 280px;
+
+    @include pxl-media($sm-view-up) {
+      margin: 0 10px;
+    }
+
+    &-svg {
+      border: 3px solid rgba(233, 242, 255, 0.3);
+      border-radius: 50%;
+      display: flex;
+        align-items: center;
+        justify-content: center;
+      height: 120px;
+      margin-bottom: 25px;
+      width: 120px;
+    }
+
+    &-text {
+      font-size: 17px;
+    }
+
+    &-img {
+      border-radius: 190px;
+      height: 190px;
+      margin-bottom: 12px;
+      overflow: hidden;
+      width: 190px;
+
+      &--centered {
+        display: flex;
+          align-items: center;
+          justify-content: center;
+      }
+    }
+
+    &-title {
+      color: #FFF;
+      font-size: 24px;
+      font-weight: 500;
+    }
+
+    &-description {
+      color: $spindle;
+      font-size: 16px;
+      margin-top: 5px;
+    }
+
+  }
+
+}

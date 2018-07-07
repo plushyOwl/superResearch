@@ -1,0 +1,124 @@
+/*
+* Base Classes
+*/
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: $firefly;
+    color: #FFF;
+    font-family: $font-family-primary;
+    font-size: 13px;
+    font-weight: 400;
+    height: 100vh;
+    line-height: 1.5;
+    min-width: 390px;
+
+    @include pxl-media($md-view-up) {
+        font-size: 16px;
+    }
+}
+
+h1,
+.h1 {
+    color: $zircon;
+    font-size: 54px;
+    font-weight: 300;
+}
+
+h2,
+.h2 {
+  color: $solitude;
+  font-size: 34px;
+  font-weight: 300;
+  line-height: 45px;
+}
+
+.h404 {
+  color: $tropical-blue;
+  font-size: 214px;
+  font-weight: 100;
+  line-height: 160px;
+  margin-bottom: 50px;
+}
+
+p {
+  color: $athens-gray;
+  font-size: 20px;
+  font-weight: 300;
+  & + & {
+    margin-top: 30px;
+  }
+}
+
+a {
+  color: #FFF;
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+ul {
+  list-style: none;
+
+  li {
+    color: #FFF;
+    display: block;
+    font-size: 18px;
+    padding-left: 28px;
+    position: relative;
+
+    &:before {
+      content: '';
+      background-image: -moz-linear-gradient( 90deg, rgb(230,44,80) 0%, rgb(250,86,118) 100%);
+      background-image: -webkit-linear-gradient( 90deg, rgb(230,44,80) 0%, rgb(250,86,118) 100%);
+      background-image: -ms-linear-gradient( 90deg, rgb(230,44,80) 0%, rgb(250,86,118) 100%);
+      border-radius: 50%;
+      display: inline-block;
+      height: 10px;
+      position: absolute;
+        left: 0;
+        top: 9px;
+      width: 10px;
+    }
+  }
+
+  li + li {
+    margin-top: 30px;
+  }
+}
+
+.title {
+  color: $tropical-blue;
+  font-size: 34px;
+  font-weight: 300;
+  margin-top: 70px;
+  margin-bottom: 10px;
+}
+
+.counter {
+  color: $cornflower;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.help-text {
+  color: $pigeon-post;
+  font-size: 12px;
+  a {
+    color: $pigeon-post;
+    text-decoration: underline;
+  }
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: $wrapper-max-width;
+  padding: 0 20px;
+  position: relative;
+  width: 100%;
+  z-index: 2;
+}

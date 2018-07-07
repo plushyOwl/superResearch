@@ -11,38 +11,25 @@
  * Variables Global....................Layout, Fonts, Colors, etc
  * em..................................Mixin to convert px to em
  * Variables Media.....................Media query variables
- * New Breakpoints.....................Function returns a media context
  * Breakpoint Classes..................Mixin class assigned values based on breakpoints
  * Media...............................Mixin for media queries
  *
- *
  * BASE
- * JS Media Flags......................Inserts content into pseudo element as a flag for JS
- * Global Classes......................Styles global classes
- * Typography..........................Base typography styles
- * Form Elements.......................Base form elements styles
- * Buttons.............................Base button styles to overwrite default browser styles
- * Images..............................Responsive image
- * Link................................Base link style
- * Table...............................Base table style
  * Fonts...............................Base font styles
+ * Classes.............................Styles global classes
+ * Buttons.............................Base buttons styles
+ * Form Elements.......................Base form Elements
  *
  * COMPONENTS
- * Product Tile........................Product tile component 
+ * Socials.............................Socials component
+ * Icon Blocks.........................Icon Blocks component
+ * Question Block......................Question Block component
  *
  * STRUCTURES
- * Global Header.......................Styles global header
- * Tile Grid...........................Grid for product tiles
- * Amplience Component.................Strucutures Amplience Components
+ * Global..............................Styles global
  *
  * UTILITIES
- * Widths..............................Simple width helper classes
- * Spacings............................Spacing utility classes
- * Alignment...........................Float Items to the left and right
- * Visually Hidden.....................Accessibily hides content
- * Text................................Allows to add key text styles to strings of text
- * Lists...............................Adds classes for list helpers
- *
+ * Util................................Helper classes
  */
 
 
@@ -61,61 +48,37 @@
 
 @import 'helpers/helpers.variables-global';
 @import 'helpers/helpers.em';
-@import 'helpers/helpers.strip-units';
-@import 'helpers/helpers.str-replace';
-@import 'helpers/helpers.is-even';
 @import 'helpers/helpers.variables-media';
-@import 'helpers/helpers.new-breakpoints';
 @import 'helpers/helpers.breakpoint-classes';
-@import 'helpers/helpers.clearfix';
 @import 'helpers/helpers.media';
-@import 'helpers/helpers.headings';
-@import 'helpers/helpers.lists';
-@import 'helpers/helpers.visually-hidden';
-@import 'helpers/helpers.aspect-image';
-
 
 /*
 * BASE
 */
 
-@import 'base/base.js-media-flags';
-@import 'base/base.global-classes';
-@import 'base/base.typography';
-@import 'base/base.form-elements';
-@import 'base/base.buttons';
-@import 'base/base.images';
-@import 'base/base.link';
-@import 'base/base.table';
 @import 'base/base.fonts';
+@import 'base/base.classes';
+@import 'base/base.buttons';
+@import 'base/base.form-elements';
 
 
 /*
 * COMPONENTS
 */
 
-@import "components/components.navigation-utility";
-@import "components/components.navigation-global";
+ @import "components/components.socials";
+ @import "components/components.icon-blocks";
+ @import "components/components.question-block";
 
 /*
 * Structures
 */
 
- @import "structures/structures.global-header.scss";
- @import "structures/structures.global-footer.scss";
- @import "structures/structures.tile-grid.scss";
- @import "structures/structures.amplience-component.scss";
-
+ @import "structures/structures.global.scss";
 
 
 /*
 * UTILITIES
 */
 
-@import 'utilities/utilities.widths';
-@import 'utilities/utilities.display';
-@import 'utilities/utilities.spacings';
-@import 'utilities/utilities.align';
-@import 'utilities/utilities.visually-hidden';
-@import 'utilities/utilities.text';
-@import 'utilities/utilities.lists';
+ @import 'utilities/utilities.util';

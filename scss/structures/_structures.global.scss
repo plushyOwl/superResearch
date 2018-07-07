@@ -1,0 +1,101 @@
+/*
+* Global
+*/
+
+$ns: s-global;
+
+
+.#{$ns}-header {
+    background-color: #FFF;
+    height: $header-height;
+    position: relative;
+    width: 100%;
+    z-index: 2;
+
+    &__wrap {
+      display: flex;
+        align-items: center;
+        justify-content: space-between;
+      height: 100%;
+    }
+
+    &__logo {
+
+    }
+
+    &__menu {
+
+        &-link {
+            color: $denim;
+            font-family: $font-family-primary;
+            font-size: 15px;
+            margin-left: 20px;
+            text-decoration: none;
+
+            &.is-active {
+              color: $oslo-gray;
+              font-weight: bold;
+            }
+        }
+
+    }
+
+}
+
+.#{$ns}-wrapper {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+  @include pxl-media($sm-view-up) {
+    height: wrapper-height(90);
+    margin-top: 70px;
+  }
+
+  &--center {
+    justify-content: center;
+    height: wrapper-height(70);
+
+    @include pxl-media($sm-view-up) {
+      height: wrapper-height(90);
+    }
+  }
+
+}
+
+.#{$ns}-background-image {
+  height: 200%;
+  margin-top: $header-height;
+  position: fixed;
+    top: -50%;
+    left: -50%;
+  width: 200%;
+
+  img {
+    margin: auto;
+    min-width: 50%;
+    min-height: 50%;
+    opacity: 0.25;
+    position: absolute;
+      top: 0;
+      left: -50%;
+      right: -50%;
+      bottom: 0;
+  }
+
+}
+
+.#{$ns}-background-blur-image {
+  position: absolute;
+  background-repeat-x: repeat;
+  -webkit-filter: blur(3px);
+  -moz-filter: blur(3px);
+  filter: blur(3px);
+  filter: url('#blur');
+  height: 100%;
+  opacity: 0.25;
+  width: 100%;
+}
