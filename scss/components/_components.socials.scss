@@ -15,6 +15,11 @@ $ns: c-socials;
     height: 35px;
     margin: 0 2px;
     width: 65px;
+    -webkit-transition: background 0.5s ease;
+
+    &:hover {
+      box-shadow: inset 0 0 25px 1px rgba(255, 255, 255, 0.35);
+    }
 
     .#{$ns}--coloured & {
       background-image: -moz-linear-gradient( 103deg, rgb(205,233,255) 0%, rgb(238,247,255) 100%);
@@ -23,6 +28,10 @@ $ns: c-socials;
       height: 50px;
       margin: 0 10px;
       width: 89px;
+
+      &:hover {
+        box-shadow: inset 0 0 20px 4px rgba(26, 104, 159, 0.35);
+      }
     }
 
   }
