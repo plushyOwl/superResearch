@@ -8,7 +8,7 @@ $ns: c-icon-blocks;
   display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
   width: 100%;
 
   @include pxl-media($sm-view-up) {
