@@ -11,7 +11,11 @@ $ns: c-question-block;
   margin-top: 50px;
   padding: 28px;
   text-align: left;
-  width: 100%;
+  width: calc(100% - 20px);
+
+  @include pxl-media($sm-view-up) {
+    width: 100%;
+  }
 
   &__header {
     color: $tuna;

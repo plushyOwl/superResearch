@@ -131,11 +131,16 @@ ul {
   background-color: $firefly;
 }
 
+#app {
+  height: 100%;  
+}
+
 .progress {
   background-color: rgba(160, 175, 195, 0.5);
   border-radius: 0;
   display: flex;
   height: 11px;
+  position: absolute;
   width: 100%;
 
   &-bar {
