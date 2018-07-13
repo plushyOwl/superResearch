@@ -20,7 +20,13 @@ $ns: s-global;
     }
 
     &__logo {
+      width: 45px;
+      overflow: hidden;
+      display: block;
 
+      @include pxl-media($sm-view-up) {
+        width: auto;
+      }
     }
 
     &__menu {
@@ -45,25 +51,22 @@ $ns: s-global;
 }
 
 .#{$ns}-wrapper {
-  margin-top: 30px;
-  margin-bottom: 20px;
+  padding-top: 30px;
+  padding-bottom: 20px;
   display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+  position: relative;
 
   @include pxl-media($sm-view-up) {
-    min-height: wrapper-height(70);
-    margin-top: 50px;
+    min-height: wrapper-height(0);
+    padding-top: 50px;
   }
 
   &--center {
     justify-content: center;
-    min-height: wrapper-height(50);
-
-    @include pxl-media($sm-view-up) {
-      min-height: wrapper-height(70);
-    }
+    min-height: wrapper-height(0);
   }
 
 }

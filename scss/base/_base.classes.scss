@@ -12,7 +12,7 @@ body {
     font-weight: 400;
     height: 100vh;
     line-height: 1.5;
-    min-width: 390px;
+    min-width: 320px;
     overflow-x: hidden;
     width: 100vw;
 
@@ -40,10 +40,14 @@ h2,
 
 .h404 {
   color: $tropical-blue;
-  font-size: 214px;
+  font-size: 160px;
   font-weight: 100;
   line-height: 160px;
   margin-bottom: 50px;
+
+  @include pxl-media($xs-view-up) {
+    font-size: 214px;
+  } 
 }
 
 p {
@@ -141,6 +145,7 @@ ul {
   display: flex;
   height: 11px;
   position: absolute;
+    top: 0;
   width: 100%;
 
   &-bar {

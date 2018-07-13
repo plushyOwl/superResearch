@@ -24,7 +24,7 @@ $em-base: 16px !default;
 @function wrapper-height($margin) {
     $height: $header-height + $margin;
 
-    @return calc(100% - #{$height});
+    @return calc(100vh - #{$height});
 
 }
 
